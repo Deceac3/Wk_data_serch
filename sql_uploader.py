@@ -11,7 +11,8 @@ def data_base_up():
         description TEXT NOT NULL,
         friends_count NEXT NOT NULL,
         birthday TEXT NOT NULL,
-        relateship TEXT NOT NULL
+        relateship TEXT NOT NULL,
+        credits INTEGER
         )'''
     )
 

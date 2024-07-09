@@ -1,5 +1,5 @@
 from selenium import webdriver as wd
-import time
+import time, parser_site, sql_uploader
 
 server = "https://vk.com/deceasedep"
 
@@ -8,3 +8,7 @@ server = "https://vk.com/deceasedep"
 browser = wd.Chrome("/usr/bin/chromedriver/")
 
 browser.quit() 
+
+#Для начала нам нужно получить стоковую страницу профиля от которого будет идти разыгровка всех страниц в будущем.
+#На каждом шаге мы будем проверять, является ли пользователь добавленным в наш список и если он таковым является, 
+#и переходим к следующему, чтобы не было повторений.
